@@ -6,7 +6,7 @@ This is another timing exercise built around the setInterval function. The playe
 
 There are only five questions in this version. Also, be aware that there are some sound effects. 
 
-**Try it out here: [Holy Grail Trivia](http://rgerboth.github.io/Trivia-Game/ "Title")**
+**Try it out here: [Holy Grail Trivia](https://rgerboth.github.io/TriviaGame/# "Holy Grail Trivia")**
 
 ## Key Technologies
 
