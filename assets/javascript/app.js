@@ -6,9 +6,10 @@ let unanswered = 0;
 let currentQuestion = 0;
 let answerTimeout = "";
 const launchSound = new Audio("http://www.wavsource.com/snds_2018-01-14_3453803176249356/movies/monty_python_hg/holy_grail_music.wav");
-const incorrectSound = new Audio("http://www.wavsource.com/snds_2018-01-14_3453803176249356/movies/monty_python_hg/nih2.wav");
+const incorrectSound = new Audio("http://www.intriguing.com/mp/_sounds/hg/runaway.wav");
 const correctSound = new Audio("http://www.wavsource.com/snds_2018-01-14_3453803176249356/movies/monty_python_hg/so_be_it.wav");
 const mouseClick = new Audio("http://www.kalmanovitz.co.il/courses/English/construction/Assets/Mousclik.wav");
+const timeoutSound = new Audio("http://www.intriguing.com/mp/_sounds/hg/argh.wav");
 
 const questions=[
 ["Stop! WHAT is your name?"],
@@ -98,7 +99,7 @@ function incorrectAnswer() {
 
 function timeout() {
   displayTimeoutAnswer();
-  incorrectSound.play();
+  timeoutSound.play();
   unanswered++;
   setTimeout(nextQuestion, 5000)
 }
