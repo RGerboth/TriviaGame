@@ -1,3 +1,5 @@
+<!-- This is test code for the timer functions, not used in finsihed product -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,25 +13,26 @@
 <body>
 
 <script type="text/javascript">
-	var answerTimeout;
 
-	function startAnswerCountdown() {
-		clearInterval(answerTimeout);
-		console.log("Start Question Countdown");
-		//set the question countdown timer
-	  	secondsRemaining  = 10;
-		// $("#timeRemaining").text("Time Remaining: " + secondsRemaining);
-	    answerTimeout = setInterval(function() {
-			console.log("Seconds Rem: " + secondsRemaining)
-			secondsRemaining--;
-	    	if (secondsRemaining === 0) {
-	    		clearInterval(answerTimeout);
-	    		// timeout();
-	    	}
-	    }, 1000);
-	}
+var answerTimeout;
 
-	startAnswerCountdown();
+function startAnswerCountdown() {
+	clearInterval(answerTimeout);
+	console.log("Start Question Countdown");
+	//set the question countdown timer
+  	secondsRemaining  = 10;
+    answerTimeout = setInterval(function() {
+		console.log("Seconds Rem: " + secondsRemaining)
+		secondsRemaining--;
+    	if (secondsRemaining === 0) {
+    		clearInterval(answerTimeout);
+    		// timeout();
+    	}
+    }, 1000);
+}
+
+startAnswerCountdown();
+
 </script>
 
 </body>
